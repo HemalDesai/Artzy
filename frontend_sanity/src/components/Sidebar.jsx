@@ -31,7 +31,12 @@ const Sidebar = ({ closeToggle, user }) => {
             <img src="https://i.ibb.co/h9YnLqL/house-1.png" className="w-8 object-contain" />
             Home
           </NavLink>
-          <h3 className="mt-2 px-5 text-base 2xl:text-xl">Discover cateogries</h3>
+          <a href="https://myai-hemaldesai.vercel.app/" className="flex items-center px-5 gap-3 text-gray-600  hover:text-black transition-all duration-200 ease-in-out capitalize">
+            <img src="https://i.ibb.co/q00LNFc/ai.png" className="w-8 object-contain" />
+            Generate Art
+          </a>
+
+          <h3 className="mt-2 px-5 text-base 2xl:text-xl text-black font-semibold">Discover cateogries</h3>
           {categories.slice(0, categories.length - 1).map((category) => (
             <NavLink
               to={`/category/${category.name}`}
